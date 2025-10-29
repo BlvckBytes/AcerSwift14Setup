@@ -8,6 +8,7 @@ gsettings set org.gnome.shell.keybindings toggle-application-view '[]'
 gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog '[]'
 gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts '[]'
 
+# The additional "AI"-key on my keyboard - let's get some use out of it! :)
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>TouchpadOff']"
 gsettings set org.gnome.shell.keybindings screenshot "['']"
 gsettings set org.gnome.shell.keybindings screenshot-window "['']"
