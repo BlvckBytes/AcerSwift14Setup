@@ -11,7 +11,7 @@ gnome-extensions-cli install 1160
 # Always hide and only toggle via keybind, as to avoid accidental triggers
 dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide true
 dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-key-toggle "['<Super>p']"
-dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-key-toggle-text "''"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-key-toggle-text "'<Super>p'"
 dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-revealed-hover false
 dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-use-pointer false
 dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-use-pressure false
