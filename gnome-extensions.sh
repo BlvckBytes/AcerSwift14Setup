@@ -6,26 +6,14 @@ pip3 install --upgrade git+https://github.com/essembeh/gnome-extensions-cli
 # Dash To Panel
 gnome-extensions-cli install 1160
 
-# Manually: within the extension's settings, hide all entries but: Date menu, System menu.
+dconf write /org/gnome/shell/extensions/hidetopbar/show-in-overlay false
+dconf write /org/gnome/shell/extensions/hidetopbar/enable-active-window false
+dconf write /org/gnome/shell/extensions/hidetopbar/enable-intellihide false
+dconf write /org/gnome/shell/extensions/hidetopbar/shortcut-delay 2.0
+dconf write /org/gnome/shell/extensions/hidetopbar/shortcut-keybind "['<Super>p']"
 
-# Always hide and only toggle via keybind, as to avoid accidental triggers
-dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide true
-dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-key-toggle "['<Super>p']"
-dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-key-toggle-text "'<Super>p'"
-dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-revealed-hover false
-dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-use-pointer false
-dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-use-pressure false
-
-# Dynamic panel length as well as minimal height (as small as possible)
-dconf write /org/gnome/shell/extensions/dash-to-panel/panel-lengths "'{\"SDC-0x00000000\":-1}'"
-dconf write /org/gnome/shell/extensions/dash-to-panel/panel-sizes "'{\"SDC-0x00000000\":32}'"
-
-# Anchor to the top right corner of the screen
-dconf write /org/gnome/shell/extensions/dash-to-panel/panel-anchors "'{\"SDC-0x00000000\":\"END\"}'"
-dconf write /org/gnome/shell/extensions/dash-to-panel/panel-positions "'{\"SDC-0x00000000\":\"TOP\"}'"
-
-# Put Windows
-gnome-extensions-cli install 39
+# Hide Top Bar
+gnome-extensions-cli install 545
 
 # Setup keybinds used to move windows around
 dconf write /org/gnome/shell/extensions/org-lab21-putwindow/ignore-top-panel "true"
