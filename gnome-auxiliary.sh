@@ -27,3 +27,5 @@ gsettings set org.gnome.mutter dynamic-workspaces "false"
 
 # By default, it's <Super>p, which would shadow show/hide top-panel
 gsettings set org.gnome.mutter.keybindings switch-monitor "[]"
+
+gsettings set org.gnome.desktop.peripherals.touchpad disable-while-typing "false"
