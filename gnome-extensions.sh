@@ -6,14 +6,25 @@ pip3 install --upgrade git+https://github.com/essembeh/gnome-extensions-cli
 # Dash To Panel
 gnome-extensions-cli install 1160
 
-dconf write /org/gnome/shell/extensions/hidetopbar/show-in-overlay false
-dconf write /org/gnome/shell/extensions/hidetopbar/enable-active-window false
-dconf write /org/gnome/shell/extensions/hidetopbar/enable-intellihide false
-dconf write /org/gnome/shell/extensions/hidetopbar/shortcut-delay 2.0
-dconf write /org/gnome/shell/extensions/hidetopbar/shortcut-keybind "['<Super>p']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide "true"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-animation-time 100
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-close-delay 100
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-key-toggle "['<Super>p']"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-key-toggle-text "'<Super>p'"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-revealed-hover "false"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-revealed-hover-limit-size "false"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-show-in-fullscreen "false"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-use-pointer "false"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-use-pointer-limit-size "false"
+dconf write /org/gnome/shell/extensions/dash-to-panel/intellihide-use-pressure "false"
+dconf write /org/gnome/shell/extensions/dash-to-panel/panel-anchors "'{\"SDC-0x00000000\":\"END\"}'"
+dconf write /org/gnome/shell/extensions/dash-to-panel/panel-element-positions "'{\"SDC-0x00000000\":[{\"element\":\"showAppsButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"activitiesButton\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"leftBox\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"taskbar\",\"visible\":false,\"position\":\"stackedTL\"},{\"element\":\"centerBox\",\"visible\":false,\"position\":\"stackedBR\"},{\"element\":\"rightBox\",\"visible\":false,\"position\":\"stackedBR\"},{\"element\":\"dateMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"systemMenu\",\"visible\":true,\"position\":\"stackedBR\"},{\"element\":\"desktopButton\",\"visible\":false,\"position\":\"stackedBR\"}]}'"
+dconf write /org/gnome/shell/extensions/dash-to-panel/panel-lengths "'{\"SDC-0x00000000\":-1}'"
+dconf write /org/gnome/shell/extensions/dash-to-panel/panel-positions "'{\"SDC-0x00000000\":\"TOP\"}'"
+dconf write /org/gnome/shell/extensions/dash-to-panel/panel-sizes "'{\"SDC-0x00000000\":32}'"
 
-# Hide Top Bar
-gnome-extensions-cli install 545
+# Put Windows
+gnome-extensions-cli install 39
 
 # Setup keybinds used to move windows around
 dconf write /org/gnome/shell/extensions/org-lab21-putwindow/ignore-top-panel "true"
