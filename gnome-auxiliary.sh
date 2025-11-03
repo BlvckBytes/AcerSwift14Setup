@@ -14,7 +14,7 @@ gsettings set org.gnome.shell.keybindings screenshot "['']"
 gsettings set org.gnome.shell.keybindings screenshot-window "['']"
 
 gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
-gsettings set org.gnome.desktop.wm.preferences auto-raise 'true'
+gsettings set org.gnome.desktop.wm.preferences auto-raise 'false'
 gsettings set org.gnome.desktop.wm.preferences auto-raise-delay 0
 gsettings set org.gnome.mutter overlay-key ''
 gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>space']"
