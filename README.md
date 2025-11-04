@@ -40,6 +40,12 @@ Since the game itself is incapable of scaling properly, gamescope comes to the r
 gamescope -m 2880x1800 -w 1920 -h 1200 -f --force-grab-cursor --
 ```
 
+Last but not least, the keyboard-layout will default to US, so use an environment-variable within the version-instance as to configure DE:
+
+```
+XKB_DEFAULT_LAYOUT=de
+```
+
 ## Cry Of Fear
 
 Install via steam and simply use the latest version of Proton (automatically selected). The game does not support higher resolutions than FHD, which is why I simply again stick to that, using gamescope as a launch-option:
