@@ -39,3 +39,13 @@ Since the game itself is incapable of scaling properly, gamescope comes to the r
 ```
 gamescope -m 2880x1800 -w 1920 -h 1200 -f --force-grab-cursor --
 ```
+
+## Cry Of Fear
+
+Install via steam and simply use the latest version of Proton (automatically selected). The game does not support higher resolutions than FHD, which is why I simply again stick to that, using gamescope as a launch-option:
+
+```
+gamescope -w 1920 -h 1080 -r 60 -f --force-grab-cursor -- %command%
+```
+
+While this already suffices to attain a smooth experience, lighting may still be off (including a broken flashlight). The following patcher works wonders, fixing all of these issues at once: https://github.com/hinqiwame/cof-linux-patcher
