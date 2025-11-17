@@ -11,7 +11,7 @@ Currently, I'm running Fedora on my Swift 14, containing the AMD Ryzen 7 8845HS;
 
 ```
 ...
-GRUB_CMDLINE_LINUX="rhgb quiet amdgpu.psr=0"
+GRUB_CMDLINE_LINUX="rhgb quiet amdgpu.psr=0 amdgpu.dcdebugmask=0x10"
 ...
 ```
 
